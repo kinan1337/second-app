@@ -1,0 +1,386 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #181511;
+    font-weight: lighter;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    cursor: pointer;
+}
+
+
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    margin: 15px 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.list{
+    display: flex;
+    align-items: center;    
+    gap: 30px;  
+    
+}
+.bars div{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.bars{
+    display: none;
+}
+
+.list ul{
+    display: flex;
+    gap: 50px;
+}
+
+.list h1{
+    color: #ffae28;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: lighter ;
+    
+}
+
+.list ul li a{
+    text-transform: uppercase;
+    color: #aca592;
+    font-size: 10px;
+}
+
+
+.active{
+    color: #ffae28 !important;
+
+}
+
+.navbar button{
+    width: 150px;
+    padding: 15px;
+    background: none;
+    border: 1px solid #ffae28;
+    color: #ffae28;
+    text-transform:uppercase ;
+}
+
+
+/* MAIN */
+
+.banner{
+    background: url('../assets/images/photo_5341282876643198189_y.jpg') center / cover;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.banner_content{
+    text-align: center;
+    padding-top: 150px;
+
+}
+
+.banner_content p{
+    color: #ffae28;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.banner_content h1{
+    font-size: 50px;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.banner_content button{
+    text-transform: uppercase;
+    font-weight: lighter;
+    width: 150px;
+    padding: 20px 0;
+    border: 0;
+    background: #ffae28;
+    margin-top: 50px
+}
+
+
+/* PAGES */
+
+.pages{
+    margin-top: 120px;
+
+}
+
+.pages_title{
+    text-align: center;
+}
+
+.pages_title p{
+    text-transform: uppercase;
+    color: #aca592;
+
+}
+
+.pages_title h1{
+    color: #ffae28;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+.row_pages{
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+}
+
+.row_pages::-webkit-scrollbar {
+    display: none;
+}
+
+.pages_card{
+    border: 1px solid #4b4138;
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    cursor: pointer;
+    box-shadow:  0 0 10px #4b4138;
+}
+
+
+
+
+.pages_card p{
+    color: #aca592;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.banner_bottom{
+    background: url('../assets/images/IMAGE\ \(2\)\ \(1\).png') center / cover;
+    width: 100%;
+    height: 60vh;
+    margin-top: 100px;
+}
+
+
+/* SERVICES */
+
+.services{
+    margin-top: 120px;
+
+}
+
+.services_title{
+    text-align: center;
+}
+
+.services_title p{
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: lighter
+}
+
+.services_title h1{
+    color: #ffae28;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+.row_services{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.service_card{
+    width: 33%;
+    border: 1px solid #4b4136;
+    box-shadow: 0 0 10px #4b4136;
+    height: 350px;
+}
+
+.service_card_content{
+    margin-left: 50px;
+    margin-top: 60px;
+    
+}
+
+.service_card_content img{
+    width: 80px;
+}
+
+.service_card_content h2{
+    margin-top: 15px;
+    color: #ffae28;
+    font-weight: lighter;
+    font-size: 25px; 
+}
+
+.service_card_content p{
+    color: #aca592;
+    font-weight: lighter;
+    margin-right: 150px;
+    font-size: 15px;
+    line-height: 2;
+}
+
+/* SOCIAL */
+
+.row_sociel{
+    margin-top: 140px;
+    display: flex;
+    gap: 30px;
+}
+
+.sociel_card{
+    width: 20%;
+    height: 240px;
+    position: relative;
+}
+
+.card1{
+    background: url('https://images.hdqwalls.com/wallpapers/autumn-fall-nature-4k-9x.jpg') center / cover;
+}
+
+
+.sociel_card img{
+    position: absolute;
+    top: -10%;
+    left: 40%;
+
+}
+
+
+/* MEDIA */
+
+@media screen and (max-width:1024px) {
+
+    .banner_content h1{
+        font-size: 50px;
+    }
+
+    .pages_title h1{
+        font-size: 50px;
+    }
+
+    .pages_card{
+        width: 50%;
+    }
+
+    .services_title h1{
+        font-size: 50px;
+    }
+
+    .service_card{
+        width: 45%;
+    }
+
+    .row_services{
+        flex-wrap: wrap;
+    }
+
+    .row_sociel{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .sociel_card{
+        width: 45%;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    .list ul{
+        display: none;
+    }
+
+    .navbar button{
+        display: none;
+    }
+
+    .bars{
+        display: block;
+    }
+
+   
+
+    .banner_content h1{
+        font-size: 35px;
+    }
+
+    .pages_title h1{
+        font-size: 35px;
+    }
+
+    .pages_card{
+        width: 100%;
+    }
+
+    .pages_title p{
+        font-size: 12px;
+    }
+
+    .banner_bottom{
+        height: 100vh;
+    }
+
+    .services_title h1{
+        font-size: 35px;
+    }
+
+    .services_title p{
+        font-size: 12px;
+    }
+
+    .service_card{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .service_card_{
+        margin-right: 50px;
+    }
+
+    .service_card_content{
+        margin-left: 40px;
+    }
+
+    .sociel_card{
+        width: 100%;
+    }
+}
